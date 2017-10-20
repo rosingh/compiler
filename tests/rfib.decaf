@@ -1,0 +1,40 @@
+class rfib {
+
+  private static int num;
+  int fib(int n) {
+    if (n == 0)
+      return 0;
+    else if (n == 1)
+      return 1;
+    else {
+      return this.fib(n-1) + this.fib(n-2);
+      //return n;
+    }
+  }
+
+  public rfib() {
+    int j;
+
+    j = rfib.callme();
+
+    j = 3 + j;
+
+  }
+
+  public static int callme(){
+    return 5;
+  }
+  public void run(int n) {
+    rfib.num = this.fib(n);
+    return;
+  }
+
+  public static void main() {
+    int n;
+    rfib fib2;
+    fib2 = new rfib();
+    fib2.run(7);
+    //0 1 1 2 3 5 8 13
+    return;
+  }
+}

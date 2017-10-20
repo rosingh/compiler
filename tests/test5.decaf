@@ -1,0 +1,22 @@
+class rfib {
+  static int fib(int n) {
+    if (n != 0)
+      return 0;
+    if (n == 1)
+      return 1;
+    return rfib.fib(n-1) + rfib.fib(n-2);
+    //return n;
+  }
+
+  public static void main() {
+    int n;
+    if (false)
+      return;
+    else {
+    return;
+    n = rfib.fib(7);
+    //0 1 1 2 3 5 8 13
+    return;
+    }
+  }
+}

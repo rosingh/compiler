@@ -1,0 +1,23 @@
+class Test {
+  public static int dumbass;
+  private static boolean x, y;
+  public Test(int x, int y) {
+    while(x=+true * -false + true * false + -3);
+    x=-3;
+  }
+  private boolean rodIsDumb(boolean j) {
+    return true;
+  }
+  public void allisonIsBest() {
+    int x;
+    x = -3 + -(3 + (3 * 7));
+    x++;
+    ++x;
+    x = x+1 + x;
+    if (x) {
+      while ((x + 3) != lol) 
+      continue;
+    }
+    return;
+  }
+}

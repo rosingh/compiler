@@ -1,0 +1,19 @@
+class A{
+  int y;
+  public A(){
+  this.x = 2;
+  }
+  int x;
+
+  public void b() {}
+  public static void main(){
+    A a = new A();
+  }
+}
+
+class B { 
+  int x;
+  public void c() {
+    this.x = 2 / 1;
+  }
+}

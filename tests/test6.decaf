@@ -1,0 +1,44 @@
+class A {
+   int x;
+   static float y;
+   public int z;
+   public A () {
+     this.x = 0;
+   }
+   public int f() {
+      return this.x + 1;
+   }
+   public int g() {
+      int i;
+      i = this.f();
+      i++;
+      return i;
+   }
+}
+class B extends A {
+   int y;
+   static int x;
+   public A s;
+   B (int x, int y) {
+     this.y = 2;
+     this.s = new A();
+     this.z = 3;
+   }
+   private static int f(){
+    B.x = 2;
+   }
+   //------------------------
+   public float f(int k, float v) {
+      return super.f() + k;
+   }
+   public int f(float k, int v){
+      return B.f();
+   }
+}
+class C extends A{
+  float a;
+  static boolean b;
+}
+class D extends C{
+  float c;
+}

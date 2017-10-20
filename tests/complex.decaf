@@ -1,0 +1,35 @@
+class Number {
+  public Number() {}
+}
+
+class Complex extends Number {
+  float real, imag;
+  static int i;
+  public Complex(float real, float imag) {
+    this.real = real;
+    this.imag = imag;
+    Complex.i = Complex.i + 1;
+  }
+
+  public static Complex add(Complex a1, Complex addend) {
+    return new Complex(a1.real + addend.real, a1.imag + addend.imag);
+  }
+
+  public Complex subtract(Complex c2) {
+    return new Complex(this.real - c2.real, this.imag - c2.imag);
+  }
+
+  public static void main() {
+    Complex c1, c2, c3, c4;
+    Number c5;
+    int x;
+    x = 29;
+    x = 30;
+    x = 31;
+    c5 = new Complex(5.0, 2.3);
+    c1 = new Complex(5.0, 2.3);
+    c2 = new Complex(3.4, 4.9);
+    c3 = Complex.add(c1, c2); //should be 8.4 + 7.2i
+    c4 = c1.subtract(c2); //should be 1.6 - 2.6i
+  }
+}
